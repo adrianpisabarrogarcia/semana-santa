@@ -1,0 +1,18 @@
+/* para tablet */
+@media (min-width: 500px){
+
+    main > div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main > div > div{
+        width: 50%;
+    }
+}
+/* para desktop */
+@media (min-width: 900px) {
+
+    main > div > div{
+        width: 25%;
+    }
+}

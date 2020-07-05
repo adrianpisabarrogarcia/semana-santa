@@ -1,0 +1,61 @@
+main{
+    background-image: url("../img/mancha-colores.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+main > div{
+    background-color: rgba(255,255,255,0.9);
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+}
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+input[type=submit]{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 6px;
+    font-size: 15px;
+}
+img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto !important; /* evita que se desplome la imagen */
+}
+
+
+
+/* para tablet */
+@media (min-width: 500px) and (max-width: 900px) {
+
+    main > div{
+        width: 40%;
+    }
+}
+/* para desktop */
+@media (min-width: 900px) {
+
+    main > div{
+        width: 30%;
+    }
+    img{
+        margin-top: -100px;
+    }
+}

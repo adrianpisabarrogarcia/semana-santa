@@ -1,0 +1,58 @@
+form{
+    margin: 30px;
+    display: block;
+}
+input, textarea{
+    border: 1px solid black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+textarea{
+    font-size: 10px !important;
+    padding: 10px;
+    width: 95%;
+}
+input[type=radio], input[type=checkbox]{
+    height: 15px;
+    border: 0px;
+    width: 10%;
+    margin-bottom: 0px;
+}
+
+form > p{
+    font-size: 10px;
+}
+.display{
+    display: none;
+}
+
+@media (min-width: 500px) {
+    #imagesslide{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #formulario{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main{
+        display: flex;
+    }
+    .display{
+        display: block;
+    }
+
+}
+@media (min-width: 900px) {
+    .nodisplay{
+        display: none;
+    }
+}
